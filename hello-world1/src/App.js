@@ -5,6 +5,7 @@ import DefualtGreet from './components/greet.js';
 import Welcome from './components/welcome.js';
 import Hello from './components/Hello.js';
 import Message from './components/Message.js';
+import Counter from './components/Counter.js';
 
 function App() {
   return (
@@ -13,8 +14,7 @@ function App() {
       <DefualtGreet></DefualtGreet>
       <Welcome></Welcome> */}
       {/* <Hello /> 
-      Sometime we wont know what property is being passed so we use children method */
-      }
+      Sometime we wont know what property is being passed so we use children method
       <Greet name='Santhosh' heroName='SuperGirl'>
         <p>This is a children porperty</p>
       </Greet>
@@ -29,7 +29,8 @@ function App() {
         <button>ACTION</button>
       </Welcome>
       <Welcome name='Meena' heroName='WonderWoman' />
-      <Message></Message>
+      <Message></Message> */}
+      <Counter value='5'> </Counter>
     </div>
   );
 }
