@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Greet } from './components/greet.js';
+import { Greet, Greet1 } from './components/greet.js';
 import DefualtGreet from './components/greet.js';
 import Welcome from './components/welcome.js';
 import Hello from './components/Hello.js';
@@ -31,6 +31,10 @@ function App() {
       <Welcome name='Meena' heroName='WonderWoman' />
       <Message></Message> */}
       <Counter value='5'> </Counter>
+      <Greet1 name='Santhosh' heroName='SuperGirl'></Greet1>
+      <Welcome name='Santhosh' heroName='SuperGirl'>
+        <p>This is a children porperty</p>
+      </Welcome>
     </div>
   );
 }

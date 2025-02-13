@@ -23,3 +23,17 @@ export const Greet = props => {
 // const Greet1 = () => <h1>Hello Santhosh</h1> ;
 // export default Greet1;
 // This is called a Defualt Export. So i can imprt w any name
+
+// Destructuring
+export const Greet1 = ({name, heroName}) => { 
+  // OR (props) => { 
+  // const {name, heroName} = props
+  // }
+  // console.log(props);
+  return (
+    <div>
+      <h1>FC Hello {name} a.k.a {heroName}</h1> 
+    </div>
+    // JSX can have only 1 wrapper elment within it. so we put it inside a div tag
+  );
+}
