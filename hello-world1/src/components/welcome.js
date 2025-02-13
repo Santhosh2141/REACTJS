@@ -6,7 +6,16 @@ Used for more complex UI. Provides Life Cycle hooks */
 
 class Welcome extends Component {
   render() {
-    return <h1>Class Component</h1>
+    // props is an inbuilt parameter for a Component. so we use this.props
+
+    /* Props are passed to the component. They are function parameters. Immutable
+      States are within the component declared in the function. Mutable */
+    return (
+    <div>
+      <h1>CC Hello {this.props.name} a.k.a {this.props.heroName}</h1>
+      {this.props.children}
+    </div>
+    )
   }
 }
 
