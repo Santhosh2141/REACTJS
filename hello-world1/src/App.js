@@ -18,6 +18,7 @@ import './appStyles.css';
 import styles from './appStyles.module.css';
 import Form from './components/Form.js';
 import Lifecycle from './components/Lifecycle.js';
+import Fragments from './components/Fragments.js';
 
 function App() {
   return (
@@ -58,7 +59,8 @@ function App() {
       <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1> */}
       {/* <Form></Form> */}
-      <Lifecycle></Lifecycle>
+      {/* <Lifecycle></Lifecycle> */}
+      <Fragments></Fragments>
     </div>
   );
 }
