@@ -22,6 +22,9 @@ import Fragments from './components/Fragments.js';
 import { PureComp } from './components/PureComponent.js';
 import ParentComp from './components/ParentComp.js';
 import MemoComp from './components/MemoComp.js';
+import Refs from './components/Refs.js';
+import FocusInput from './components/FocusInput.js';
+import ForwardRefParent from './components/ForwardRefParent.js';
 
 function App() {
   return (
@@ -64,7 +67,10 @@ function App() {
       {/* <Form></Form> */}
       {/* <Lifecycle></Lifecycle> */}
       {/* <Fragments></Fragments> */}
-      <ParentComp></ParentComp>
+      {/* <ParentComp></ParentComp> */}
+      {/* <Refs></Refs> */}
+      {/* <FocusInput></FocusInput> */}
+      <ForwardRefParent></ForwardRefParent>
     </div>
   );
 }
