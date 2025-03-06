@@ -21,6 +21,7 @@ import Lifecycle from './components/Lifecycle.js';
 import Fragments from './components/Fragments.js';
 import { PureComp } from './components/PureComponent.js';
 import ParentComp from './components/ParentComp.js';
+import MemoComp from './components/MemoComp.js';
 
 function App() {
   return (

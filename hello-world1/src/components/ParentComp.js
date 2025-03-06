@@ -1,10 +1,11 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import RegComp from './RegComp.js'
 import PureComp from './PureComponent.js'
+import MemoComp from './MemoComp.js'
 
 // if parent is pure then children are pure too.
 // wehn you mutate a list the pure component wont re render cuz the calues change but the loc doesnt so return a new obj for new state.
-export class ParentComp extends PureComponent {
+export class ParentComp extends Component {
   constructor(props) {
     super(props)
   
@@ -24,8 +25,9 @@ export class ParentComp extends PureComponent {
     return (
       <div>
         Parent component
-        <RegComp name={this.state.name}></RegComp>
-        <PureComp name={this.state.name}></PureComp>
+        {/* <RegComp name={this.state.name}></RegComp>
+        <PureComp name={this.state.name}></PureComp> */}
+        <MemoComp name={this.state.name}></MemoComp>
       </div>
     )
   }
