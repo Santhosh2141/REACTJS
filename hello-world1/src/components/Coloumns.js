@@ -2,14 +2,25 @@ import React from 'react'
 
 // td cant appear inside div tag so we use fragemtns
 function Coloumns() {
-  const items = [1,2,3]
+  const items = [{
+    id: 1,
+    name: "Santhosh"
+  },{
+    id: 2,
+    name: "Srinivas"
+  },{
+    id: 3,
+    name: "Lakshmanan"
+  }]
   return (
     <React.Fragment>
       {
-        items.map(item => (
-          <React.Fragment key={item.id}>
-            <h1>Title</h1>
-            <p>{item.id}</p>
+        items.map((item,index) => (
+          <React.Fragment key={index}>
+            <td>
+              <div><h1>Title</h1></div>
+              <div>{item.name}</div>
+            </td>
           </React.Fragment>
         ))
       }
