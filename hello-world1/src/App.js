@@ -19,6 +19,8 @@ import styles from './appStyles.module.css';
 import Form from './components/Form.js';
 import Lifecycle from './components/Lifecycle.js';
 import Fragments from './components/Fragments.js';
+import { PureComp } from './components/PureComponent.js';
+import ParentComp from './components/ParentComp.js';
 
 function App() {
   return (
@@ -60,7 +62,8 @@ function App() {
       <h1 className={styles.success}>Success</h1> */}
       {/* <Form></Form> */}
       {/* <Lifecycle></Lifecycle> */}
-      <Fragments></Fragments>
+      {/* <Fragments></Fragments> */}
+      <ParentComp></ParentComp>
     </div>
   );
 }
