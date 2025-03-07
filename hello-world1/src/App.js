@@ -25,6 +25,9 @@ import MemoComp from './components/MemoComp.js';
 import Refs from './components/Refs.js';
 import FocusInput from './components/FocusInput.js';
 import ForwardRefParent from './components/ForwardRefParent.js';
+import Portals from './components/Portals.js';
+import ErrorHandling from './components/ErrorHandling.js';
+import ErrorBoundry from './components/ErrorBoundry.js';
 
 function App() {
   return (
@@ -70,7 +73,14 @@ function App() {
       {/* <ParentComp></ParentComp> */}
       {/* <Refs></Refs> */}
       {/* <FocusInput></FocusInput> */}
-      <ForwardRefParent></ForwardRefParent>
+      {/* <ForwardRefParent></ForwardRefParent> */}
+      {/* <Portals></Portals> */}
+      <ErrorBoundry>
+        <ErrorHandling heroName = "Flash"></ErrorHandling>
+      </ErrorBoundry>
+      <ErrorBoundry>
+        <ErrorHandling heroName = "Joker"></ErrorHandling>
+      </ErrorBoundry>
     </div>
   );
 }
